@@ -39,7 +39,7 @@ struct ResultView: View {
                 }
                 
                 if correctlyAnswered == totalNumOfQuestions {
-                    Text("You answered all the questions correct!!")
+                    Text("You answered all the questions correct!")
                         .padding(.horizontal, 30)
                         .font(.custom("Arial Rounded MT Bold", size: 30))
                         .foregroundColor(.brown)

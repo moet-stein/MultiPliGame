@@ -209,7 +209,7 @@ struct GameView: View {
                     .frame(width: 130, height: 100)
                     .transition(.scale)
                     .onAppear(perform: {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             self.correctAnimation = false
                             self.wrongAnimation = false
                         })
@@ -253,7 +253,7 @@ struct GameView: View {
         } else {
             wrongAnimation = true
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             nextQuestion()
         })
         

@@ -199,14 +199,14 @@ struct GameView: View {
                             .padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
                         
                         if wrongAnimation {
-                            Text("The Answer was \(correctAnswer)")
+                            Text("Answer: \(correctAnswer)")
                                 .foregroundColor(.white)
-                                .font(.system(size: 20, weight: .regular))
+                                .font(.system(size: 13, weight: .regular))
                                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
                         }
                     }
                     .background(Color.gray.opacity(0.75))
-                    .frame(width: 200, height: 180)
+                    .frame(width: 130, height: 100)
                     .transition(.scale)
                     .onAppear(perform: {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {

@@ -105,6 +105,8 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                     .padding(.horizontal, 30)
                     .padding(.bottom, 60)
+                    .colorMultiply(.orange)
+                
                     
 //                    Spacer()
                     
